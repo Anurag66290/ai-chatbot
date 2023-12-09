@@ -5,7 +5,7 @@ import User from "../models/user-model.js";
 dotenv.config();
 
 const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY,
+  apiKey:   "process.env.OPENAI_API_KEY",
 });
 
 export const generateChatCompletion = async (req, res, next) => {

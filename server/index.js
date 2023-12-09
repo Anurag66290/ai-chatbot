@@ -27,8 +27,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors(corsOptions));
 app.use(cookieParser());
 
-server.listen(process.env.PORT, () => {
-  console.log(`Server is listening on port: ${process.env.PORT} 🤘🏻`);
+server.listen(8000, () => {
+  console.log(`Server is listening on port: 8000 🤘🏻`);
 });
 
 app.get("/", (req, res) => {

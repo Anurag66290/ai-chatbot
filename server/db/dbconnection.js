@@ -5,7 +5,7 @@ config();
 
 export const dbConnect = async () => {
   try {
-    await connect(process.env.MONGODB_URL);
+    await connect("mongodb://localhost:27017/chat");
   } catch (error) {
     console.error(`Error in connecting to MongoDB. Error: ${error.message}`);
   }
